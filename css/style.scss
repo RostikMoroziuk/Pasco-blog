@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$headFont: 'Montserrat',
+sans-serif;
+$smallFont: 14px;
+$mediumFont: 24px;
+$whiteColor: rgba(#fff,
+0.9);
+$secondColor: #303f9f;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a,
+.carousel-caption,
+.btn {
+  font-family: $headFont;
+}
+
+.navigation a,
+.navigation,
+.carousel-caption {
+  color: $whiteColor;
+}
+
+.main-header {
+  .navigation {
+    position: fixed;
+  }
+  .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  .navigation,
+  .carousel-caption {
+    z-index: 10;
+  }
+}
+
+.navigation {
+  li {
+    &>a {
+      font-size: $smallFont;
+      padding-left: 0;
+      padding-right: 0;
+      &:hover {
+        background-color: transparent;
+        color: #ddd;
+      }
+    }
+    text-transform: uppercase;
+  }
+  .dropdown {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .icon a,
+  .icon div {
+    padding: 15px 10px;
+  }
+  .active {
+    border-bottom: 2px solid #ff4081;
+  }
+  .navbar-brand {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.carousel-caption {
+  .inscription {
+    text-transform: uppercase;
+    color: rgba(#fff, 0.5);
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .main-header {
+    color: $whiteColor;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  .author {
+    width: 25%;
+    margin: 25px auto 0;
+  }
+  address {
+    margin: 10px 0;
+  }
+  .date-time,
+  .comments-section {
+    display: flex;
+  }
+  .comments-section {
+    justify-content: space-between;
+  }
+  .date-time {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  font-size: $mediumFont;
+  text-transform: uppercase;
+}
+
+.btn-oval {
+  color: $whiteColor;
+  background-color: $secondColor;
+  border-radius: 25px 25px;
+}
