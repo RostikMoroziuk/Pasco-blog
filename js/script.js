@@ -7,7 +7,7 @@ $(document).scroll(function () {
 });
 
 $('.carousel').carousel({
-  interval: 5000000
+  interval: 5000
 })
 
 AOS.init( {
