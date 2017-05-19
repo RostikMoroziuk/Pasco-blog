@@ -5,7 +5,7 @@ sans-serif;
 $textFont: 'Open Sans',
 sans-serif;
 $smallFont: 14px;
-$mediumFont: 24px;
+$mediumFont: 20px;
 $articleFont: 18px;
 $nameFont: 16px;
 $whiteColor: rgba(#fff,
@@ -108,6 +108,9 @@ $footerColor: rgba(255,
 }
 
 .navigation {
+  .navbar {
+    margin-bottom: 0;
+  }
   li {
     &>a {
       font-size: $smallFont;
@@ -116,7 +119,7 @@ $footerColor: rgba(255,
       &:hover,
       &:focus {
         background-color: transparent;
-        color: #ddd;
+        color: $footerColor;
       }
     }
     text-transform: uppercase;
@@ -128,8 +131,8 @@ $footerColor: rgba(255,
     }
   }
   .dropdown {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .dropdown-menu {
     min-width: 0;
@@ -151,16 +154,24 @@ $footerColor: rgba(255,
   }
 }
 
+.carousel {
+  .carousel-caption {
+    bottom: 50%;
+    transform: translateY(60%);
+  }
+}
+
 .carousel-caption {
+  padding: 0;
   .inscription {
     text-transform: uppercase;
     color: rgba(#fff, 0.5);
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 400;
   }
   .main-header {
     color: $whiteColor;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 900;
     margin-bottom: 25px;
   }
@@ -193,6 +204,9 @@ $footerColor: rgba(255,
   color: $whiteColor;
   background-color: $secondColor;
   border-radius: 25px 25px;
+  &:hover {
+    color: $footerColor;
+  }
 }
 
 .credibility {
@@ -215,7 +229,9 @@ $footerColor: rgba(255,
     margin-bottom: 20px;
   }
   a {
+    display: inline-block;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -259,6 +275,8 @@ $footerColor: rgba(255,
   }
   .show {
     align-self: flex-end;
+    padding-left: 10px;
+    cursor: pointer;
   }
   .contact {
     display: flex;
@@ -302,7 +320,7 @@ $footerColor: rgba(255,
     font-size: $articleFont;
   }
   .card {
-    width: 820px;
+    width: 100%;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: #ffffff;
@@ -334,11 +352,11 @@ $footerColor: rgba(255,
     margin-bottom: 0px;
   }
   .media {
-    width: 260px;
+    width: 32%;
     height: 100%;
   }
   .text-content {
-    width: 560px;
+    width: 68%;
   }
   .text {
     margin-bottom: 12px;
@@ -444,4 +462,93 @@ $footerColor: rgba(255,
   background-color: #303030;
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 1199px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+  .collapsing {
+    overflow: hidden!important;
+  }
+  .carousel-caption {
+    .author {
+      display: none;
+    }
+  }
+  .navigation {
+    background-color: #3366cc; // width: 100%;
+    .icon-bar {
+      background-color: $whiteColor;
+    }
+  }
+  .social {
+    height: 300px;
+    max-width: 300px
+  }
+  .photos {
+    max-width: 250px;
+  }
+  .fb {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .latest-posts .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post {
+    margin-bottom: 25px;
+  }
+  .consume .step {
+    margin-bottom: 25px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header .navigation {
+    width: 100%;
+  }
+  .carousel {
+    margin-top: 52px;
+  }
+  .credibility {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social {
+    height: auto;
+  }
 }

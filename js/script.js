@@ -5,3 +5,7 @@ $(document).scroll(function () {
     $('.navbar').css('background-color', 'transparent');
   }
 });
+
+$('.carousel').carousel({
+  interval: 5000000
+})
