@@ -16,6 +16,10 @@ $darkColor: rgba(0,
 0.87);
 $secondColor: #303f9f;
 $darkBackground: #f5f5f5;
+$footerColor: rgba(255,
+255,
+255,
+0.5);
 * {
   margin: 0;
   padding: 0;
@@ -40,13 +44,16 @@ $darkBackground: #f5f5f5;
 }
 
 .latest-posts .post-header,
-.best-posts .post-header {
+.best-posts .post-header,
+.epilogue .panel-title {
   font-size: $smallFont;
 }
 
 .navigation a,
 .navigation,
-.carousel-caption {
+.carousel-caption,
+.epilogue .header,
+.copyright {
   color: $whiteColor;
 }
 
@@ -61,6 +68,10 @@ $darkBackground: #f5f5f5;
 .top-blogers h2.header,
 .best-posts .header {
   color: $secondColor;
+}
+
+.epilogue .panel-title {
+  color: $footerColor;
 }
 
 .subscribe-buttons,
@@ -281,6 +292,9 @@ $darkBackground: #f5f5f5;
     background-color: #ffffff;
     display: flex;
     margin-bottom: 25px;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
   }
   .author {
     padding-left: 0;
@@ -318,4 +332,100 @@ $darkBackground: #f5f5f5;
   .show {
     margin-right: 15px;
   }
+}
+
+.consume {
+  padding: 50px 0;
+  .step-number {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: $secondColor;
+    color: white;
+    font-size: 80px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20px;
+  }
+  .step {
+    display: flex;
+    justify-content: center;
+  }
+  .post-header {
+    margin-top: 0;
+  }
+  .step-description {
+    align-self: center;
+  }
+}
+
+.epilogue {
+  background-color: #212121;
+  padding: 50px 0 80px;
+  .header {
+    margin-top: 0;
+    font-size: $articleFont;
+    text-transform: uppercase;
+  }
+  .panel-title {
+    text-transform: uppercase;
+    font-family: $textFont;
+    font-weight: 700;
+    color: $whiteColor;
+  }
+  .panel {
+    background-color: transparent;
+    border: 2px solid $footerColor;
+    border-right: none;
+    a {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  .cpllapse-menu {
+    list-style: none;
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $textFont;
+      color: $footerColor;
+    }
+  }
+  .social-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    a {
+      margin-bottom: 10px;
+    }
+  }
+  .form-control {
+    background-color: transparent;
+    border: 2px solid $footerColor;
+    border-right: none;
+    color: $footerColor;
+  }
+  textarea.form-control {
+    resize: none;
+  }
+  .btn {
+    width: 100%;
+    background-color: #303030;
+    color: $whiteColor;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.copyright {
+  background-color: #303030;
+  text-align: center;
+  padding: 10px;
 }

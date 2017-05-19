@@ -21,12 +21,15 @@
   font-weight: 400; }
 
 .latest-posts .post-header,
-.best-posts .post-header {
+.best-posts .post-header,
+.epilogue .panel-title {
   font-size: 14px; }
 
 .navigation a,
 .navigation,
-.carousel-caption {
+.carousel-caption,
+.epilogue .header,
+.copyright {
   color: rgba(255, 255, 255, 0.9); }
 
 .header,
@@ -39,6 +42,9 @@
 .top-blogers h2.header,
 .best-posts .header {
   color: #303f9f; }
+
+.epilogue .panel-title {
+  color: rgba(255, 255, 255, 0.5); }
 
 .subscribe-buttons,
 .latest-posts,
@@ -207,6 +213,8 @@
   background-color: #ffffff;
   display: flex;
   margin-bottom: 25px; }
+  .best-posts .card:last-of-type {
+    margin-bottom: 50px; }
 .best-posts .author {
   padding-left: 0;
   padding: 10px 0; }
@@ -234,5 +242,82 @@
   overflow: hidden; }
 .best-posts .show {
   margin-right: 15px; }
+
+.consume {
+  padding: 50px 0; }
+  .consume .step-number {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: #303f9f;
+    color: white;
+    font-size: 80px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20px; }
+  .consume .step {
+    display: flex;
+    justify-content: center; }
+  .consume .post-header {
+    margin-top: 0; }
+  .consume .step-description {
+    align-self: center; }
+
+.epilogue {
+  background-color: #212121;
+  padding: 50px 0 80px; }
+  .epilogue .header {
+    margin-top: 0;
+    font-size: 18px;
+    text-transform: uppercase; }
+  .epilogue .panel-title {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9); }
+  .epilogue .panel {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none; }
+    .epilogue .panel a {
+      padding-left: 5px;
+      padding-right: 5px; }
+  .epilogue .cpllapse-menu {
+    list-style: none; }
+    .epilogue .cpllapse-menu a {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      color: rgba(255, 255, 255, 0.5); }
+  .epilogue .social-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .epilogue .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between; }
+    .epilogue .photos a {
+      margin-bottom: 10px; }
+  .epilogue .form-control {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    color: rgba(255, 255, 255, 0.5); }
+  .epilogue textarea.form-control {
+    resize: none; }
+  .epilogue .btn {
+    width: 100%;
+    background-color: #303030;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400; }
+
+.copyright {
+  background-color: #303030;
+  text-align: center;
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */
