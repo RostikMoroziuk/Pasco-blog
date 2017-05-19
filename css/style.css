@@ -68,6 +68,8 @@
 .main-header .navigation,
 .main-header .carousel-caption {
   z-index: 10; }
+.main-header .navbar {
+  transition: background-color .2s; }
 
 .navigation li {
   text-transform: uppercase; }
@@ -75,9 +77,11 @@
     font-size: 14px;
     padding-left: 0;
     padding-right: 0; }
-    .navigation li > a:hover {
+    .navigation li > a:hover, .navigation li > a:focus {
       background-color: transparent;
       color: #ddd; }
+.navigation .open a:focus {
+  background-color: transparent; }
 .navigation .dropdown {
   margin-left: 20px;
   margin-right: 20px; }

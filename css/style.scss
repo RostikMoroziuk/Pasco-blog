@@ -102,6 +102,9 @@ $footerColor: rgba(255,
   .carousel-caption {
     z-index: 10;
   }
+  .navbar {
+    transition: background-color .2s;
+  }
 }
 
 .navigation {
@@ -110,12 +113,18 @@ $footerColor: rgba(255,
       font-size: $smallFont;
       padding-left: 0;
       padding-right: 0;
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: transparent;
         color: #ddd;
       }
     }
     text-transform: uppercase;
+  }
+  .open {
+    a:focus {
+      background-color: transparent;
+    }
   }
   .dropdown {
     margin-left: 20px;
