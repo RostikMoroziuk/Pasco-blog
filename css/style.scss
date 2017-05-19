@@ -122,6 +122,7 @@ $footerColor: rgba(255,
     text-transform: uppercase;
   }
   .open {
+    a,
     a:focus {
       background-color: transparent;
     }
@@ -129,6 +130,12 @@ $footerColor: rgba(255,
   .dropdown {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .dropdown-menu {
+    min-width: 0;
+    li {
+      padding: 0 10px;
+    }
   }
   .icon a,
   .icon div {

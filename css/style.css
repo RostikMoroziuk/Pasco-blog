@@ -80,11 +80,16 @@
     .navigation li > a:hover, .navigation li > a:focus {
       background-color: transparent;
       color: #ddd; }
+.navigation .open a,
 .navigation .open a:focus {
   background-color: transparent; }
 .navigation .dropdown {
   margin-left: 20px;
   margin-right: 20px; }
+.navigation .dropdown-menu {
+  min-width: 0; }
+  .navigation .dropdown-menu li {
+    padding: 0 10px; }
 .navigation .icon a,
 .navigation .icon div {
   padding: 15px 10px; }
