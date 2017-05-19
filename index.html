@@ -9,6 +9,9 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/bootstrap.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
+
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
 
   <script src="https://use.fontawesome.com/d43ae5a69d.js"></script>
 
@@ -26,13 +29,13 @@
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                  aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#">pasco</a>
+                    aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">pasco <span class="glyphicon glyphicon-shopping-cart"></span></a>
               </div>
 
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -229,13 +232,13 @@
         <div class="row">
           <!--TODO: add links-->
           <ul class="credibility">
-            <li>
+            <li data-aos="zoom-in">
               <a href="#"><img src="img/logo_wordpress.png" alt="wordpress"></a>
             </li>
-            <li>
+            <li data-aos="zoom-in">
               <a href="#"><img src="img/logo_livejournal_big.gif" alt="livejournal"></a>
             </li>
-            <li>
+            <li data-aos="zoom-in">
               <a href="#"><img src="img/squarespace-web-builder.png" alt="squarespace"></a>
             </li>
           </ul>
@@ -245,8 +248,8 @@
     <section class="subscribe-buttons">
       <div class="container">
         <div class="row">
-          <div class="wrapper">
-            <article class="banners col-lg-6">
+          <div class="wrapper" data-aos="fade-up">
+            <article class="banners col-sm-6 col-xs-12">
               <h2 class="header">Push Button Influence Podcast</h2>
               <!--TODO: add links-->
               <a href="#">
@@ -256,7 +259,7 @@
                 <img src="img/subscribe-on-stitcher.png" alt="stitcher">
               </a>
             </article>
-            <article class="text col-lg-6">
+            <article class="text col-sm-6 col-xs-12">
               <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
               <ul class="events">
                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid modi possimus quod.</li>
@@ -277,7 +280,7 @@
     <section class="top-blogers">
       <div class="container">
         <h2 class="header">Top Blogers</h2>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="col-sm-6">
             <article class="bloger">
               <div class="photo">
@@ -326,7 +329,7 @@
     <section class="latest-posts">
       <div class="container">
         <h2 class="header">Latest Posts</h2>
-        <div class="row wrapper">
+        <div class="row wrapper" data-aos="fade-up">
           <div class="col-md-3">
             <!--TODO: add likes and comments to media-->
             <article class="post">
@@ -415,7 +418,7 @@
       <div class="container">
         <div class="row">
           <h2 class="header">Best Posts</h2>
-          <div class="col-sm-12 col-lg-9">
+          <div class="col-sm-12 col-lg-9" data-aos="fade-up">
             <article class="card">
               <!--TODO: add media-->
               <div class="media">
@@ -506,7 +509,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-4">
-            <div class="step">
+            <div class="step" data-aos="zoom-in">
               <div class="step-number">
                 1
               </div>
@@ -517,7 +520,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
-            <div class="step">
+            <div class="step" data-aos="zoom-in" data-aos-delay="1500">
               <div class="step-number">
                 2
               </div>
@@ -528,7 +531,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-4">
-            <div class="step">
+            <div class="step" data-aos="zoom-in" data-aos-delay="3000">
               <div class="step-number">
                 3
               </div>
@@ -546,7 +549,7 @@
     <section class="epilogue">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-lg-3 pages">
             <h2 class="header">pages widget</h2>
             <div class="panel-group" id="pages-widget" role="tablist" aria-multiselectable="true">
               <!--Home-->
@@ -658,7 +661,7 @@
           </div>
 
           <!--Twitter widget and solial links-->
-          <div class="col-sm-6 social">
+          <div class="col-sm-6 social col-lg-3">
             <!--<div class="tweets">
               <h2 class="header">Twitter Widget</h2>
               <a class="twitter-timeline" data-width="262" data-height="255" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
@@ -690,7 +693,7 @@
           </div>
 
           <!--Ficklr widget-->
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-lg-3 flickr">
             <h2 class="header">flickr widget</h2>
             <div class="photos">
               <a data-flickr-embed="true" href="https://www.flickr.com/photos/54016566@N06/33890918334/" title="Photo"><img src="https://c1.staticflickr.com/5/4176/33890918334_d09bd89d00_s.jpg" width="75" height="75" alt="Photo"></a>
@@ -709,7 +712,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-lg-3 news">
             <h2 class="header">news letter</h2>
             <form action="#" method="post">
               <div class="form-group">
@@ -737,6 +740,7 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 

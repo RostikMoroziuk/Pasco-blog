@@ -9,3 +9,7 @@ $(document).scroll(function () {
 $('.carousel').carousel({
   interval: 5000000
 })
+
+AOS.init( {
+  duration: 1800
+});

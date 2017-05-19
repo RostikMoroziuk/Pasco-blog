@@ -151,9 +151,15 @@ $footerColor: rgba(255,
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700;
+    .glyphicon {
+      display: none;
+    }
   }
 }
 
+.dropdown-menu > li > a {
+  color: $whiteColor;
+}
 .carousel {
   .carousel-caption {
     bottom: 50%;
@@ -220,6 +226,7 @@ $footerColor: rgba(255,
   .wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .header {
     margin: 0 0 20px;
@@ -232,6 +239,9 @@ $footerColor: rgba(255,
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+  .events {
+    list-style-position: inside;
   }
 }
 
@@ -500,6 +510,16 @@ $footerColor: rgba(255,
   .collapsing {
     overflow: hidden!important;
   }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
   .carousel-caption {
     .author {
       display: none;
@@ -518,8 +538,18 @@ $footerColor: rgba(255,
   .photos {
     max-width: 250px;
   }
-  .fb {
+  .fb,
+  .nav .icon {
     display: none;
+  }
+  .pages,
+  .social,
+  .flickr,
+  .news {
+    margin-bottom: 35px;
+  }
+  .navigation .navbar-brand .glyphicon {
+    display: inline-block;
   }
 }
 
@@ -535,6 +565,7 @@ $footerColor: rgba(255,
     margin-bottom: 25px;
     justify-content: flex-start;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -550,5 +581,41 @@ $footerColor: rgba(255,
   }
   .social {
     height: auto;
+  }
+  .step {
+    margin-left: 35%;
+  }
+  .inscription,
+  .caption .btn-oval {
+    display: none;
+  }
+  .carousel-caption .main-header {
+    font-size: 25px;
+  }
+  .subscribe-buttons img {
+    height: 60px;
+  } // .best-posts .text {
+  //   display: none;
+  // }
+}
+
+@media (max-width: 400px) {
+  .carousel-caption .main-header {
+    font-size: 20px;
+    overflow: hidden;
+    max-height: 70px;
+  }
+  .best-posts .card {
+    flex-direction: column;
+  }
+  .best-posts .media,
+  .best-posts .text-content {
+    width: 100%;
+  }
+  .best-posts .media img {
+    width: 100%;
+  }
+  .step {
+    margin-left: 0;
   }
 }

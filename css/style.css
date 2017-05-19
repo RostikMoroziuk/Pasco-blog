@@ -101,6 +101,11 @@
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 700; }
+  .navigation .navbar-brand .glyphicon {
+    display: none; }
+
+.dropdown-menu > li > a {
+  color: rgba(255, 255, 255, 0.9); }
 
 .carousel .carousel-caption {
   bottom: 50%;
@@ -152,7 +157,8 @@
   padding: 50px 0; }
   .subscribe-buttons .wrapper {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .subscribe-buttons .header {
     margin: 0 0 20px; }
   .subscribe-buttons .caption {
@@ -162,6 +168,8 @@
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px; }
+  .subscribe-buttons .events {
+    list-style-position: inside; }
 
 .top-blogers h2.header {
   margin: 50px 0;
@@ -379,6 +387,16 @@
   .collapsing {
     overflow: hidden !important; }
 
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
   .carousel-caption .author {
     display: none; }
 
@@ -394,8 +412,18 @@
   .photos {
     max-width: 250px; }
 
-  .fb {
-    display: none; } }
+  .fb,
+  .nav .icon {
+    display: none; }
+
+  .pages,
+  .social,
+  .flickr,
+  .news {
+    margin-bottom: 35px; }
+
+  .navigation .navbar-brand .glyphicon {
+    display: inline-block; } }
 @media (max-width: 991px) {
   .latest-posts .wrapper {
     flex-direction: column;
@@ -419,6 +447,37 @@
     align-items: center; }
 
   .social {
-    height: auto; } }
+    height: auto; }
+
+  .step {
+    margin-left: 35%; }
+
+  .inscription,
+  .caption .btn-oval {
+    display: none; }
+
+  .carousel-caption .main-header {
+    font-size: 25px; }
+
+  .subscribe-buttons img {
+    height: 60px; } }
+@media (max-width: 400px) {
+  .carousel-caption .main-header {
+    font-size: 20px;
+    overflow: hidden;
+    max-height: 70px; }
+
+  .best-posts .card {
+    flex-direction: column; }
+
+  .best-posts .media,
+  .best-posts .text-content {
+    width: 100%; }
+
+  .best-posts .media img {
+    width: 100%; }
+
+  .step {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
