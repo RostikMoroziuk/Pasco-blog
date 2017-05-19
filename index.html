@@ -98,9 +98,13 @@
                   </li>
                   <!--Menu icons-->
                   <li class="icon"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                  <li class="icon"><div class="separate-line">|</div></li>
+                  <li class="icon">
+                    <div class="separate-line">|</div>
+                  </li>
                   <li class="icon"><a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
-                  <li class="icon"><div class="separate-line">|</div></li>
+                  <li class="icon">
+                    <div class="separate-line">|</div>
+                  </li>
                   <li class="icon"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                 </ul>
               </div>
@@ -110,9 +114,9 @@
       </div>
     </div>
     <!--Carousel banner-->
-    <div class="carousel slide" id="carousel-banner" data-ride="carousel">     
+    <div class="carousel slide" id="carousel-banner" data-ride="carousel">
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">     
+      <div class="carousel-inner" role="listbox">
         <div class="item active">
           <div class="filter"></div>
           <img src="img/Layer1.png" alt="5 ways one">
@@ -241,24 +245,26 @@
     <section class="subscribe-buttons">
       <div class="container">
         <div class="row">
-          <article class="banners">
-            <h2 class="header">Push Button Influence Podcast</h2>
-            <!--TODO: add links-->
-            <a href="#">
-              <img src="img/Subscribe-on-iTunes.png" alt="itunes">
-            </a>
-            <a href="#">
-              <img src="img/subscribe-on-stitcher.png" alt="stitcher">
-            </a>
-          </article>
-          <article class="text">
-            <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-            <ul class="events">
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid modi possimus quod.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquam accusamus quam.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloribus vel commodi!</li>
-            </ul>
-          </article>
+          <div class="wrapper">
+            <article class="banners col-lg-6">
+              <h2 class="header">Push Button Influence Podcast</h2>
+              <!--TODO: add links-->
+              <a href="#">
+                <img src="img/Subscribe-on-iTunes.png" alt="itunes">
+              </a>
+              <a href="#">
+                <img src="img/subscribe-on-stitcher.png" alt="stitcher">
+              </a>
+            </article>
+            <article class="text col-lg-6">
+              <div class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+              <ul class="events">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid modi possimus quod.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus aliquam accusamus quam.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim doloribus vel commodi!</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -275,19 +281,19 @@
           <div class="col-sm-6">
             <article class="bloger">
               <div class="photo">
-                <img src="http://placehold.it/150x150" alt="Henry Little">
+                <img src="img/top-blogers1.png" alt="Henry Little" class="img-responsive">
               </div>
               <div class="content">
-                <h3 class="header">Henry Little</h3>
+                <h3 class="header"><a href="#">Henry Little</a></h3>
                 <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet accusamus nostrum.</div>
               </div>
             </article>
             <article class="bloger">
               <div class="photo">
-                <img src="http://placehold.it/150x150" alt="Benjamin Miller">
+                <img src="img/top-blogers2.png" alt="Benjamin Miller" class="img-responsive">
               </div>
               <div class="content">
-                <h3 class="header">Benjamin Miller</h3>
+                <h3 class="header"><a href="#">Benjamin Miller</a></h3>
                 <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet accusamus nostrum.</div>
               </div>
             </article>
@@ -295,19 +301,19 @@
           <div class="col-sm-6">
             <article class="bloger">
               <div class="photo">
-                <img src="http://placehold.it/150x150" alt="James Laman">
+                <img src="img/top-blogers3.png" alt="James Laman" class="img-responsive">
               </div>
               <div class="content">
-                <h3 class="header">James Laman</h3>
+                <h3 class="header"><a href="#">James Laman</a></h3>
                 <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet accusamus nostrum.</div>
               </div>
             </article>
             <article class="bloger">
               <div class="photo">
-                <img src="http://placehold.it/150x150" alt="John Franklin">
+                <img src="img/top-blogers4.png" alt="John Franklin" class="img-responsive">
               </div>
               <div class="content">
-                <h3 class="header">John Franklin</h3>
+                <h3 class="header"><a href="#">John Franklin</a></h3>
                 <div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet accusamus nostrum.</div>
               </div>
             </article>
@@ -320,7 +326,7 @@
     <section class="latest-posts">
       <div class="container">
         <h2 class="header">Latest Posts</h2>
-        <div class="row">
+        <div class="row wrapper">
           <div class="col-lg-3">
             <!--TODO: add likes and comments to media-->
             <article class="post">
@@ -333,9 +339,10 @@
                 <p class="text">Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum
                   vitae mauris. </p>
               </div>
+              <div class="line"></div>
               <address class="author">
                 <div class="contact">
-                  <img src="img/james-laman.png" alt="James Laman">
+                  <img src="img/james-laman.png" alt="James Laman" class="img-responsive photo">
                   <div class="name">James Laman</div>
                   <div class="date">April 28, 2016</div>
                 </div>
@@ -358,7 +365,7 @@
               </div>
               <address class="author">
                 <div class="contact">
-                  <img src="img/benjamin.png" alt="Benjamin Miller">
+                  <img src="img/benjamin.png" alt="Benjamin Miller" class="img-responsive photo">
                   <div class="name">Benjamin Miller</div>
                   <div class="date">April 28, 2016</div>
                 </div>
@@ -381,7 +388,7 @@
               </div>
               <address class="author">
                 <div class="contact">
-                  <img src="img/henry.png" alt="Henry Little">
+                  <img src="img/henry.png" alt="Henry Little" class="img-responsive photo">
                   <div class="name">Henry Little</div>
                   <div class="date">April 28, 2016</div>
                 </div>

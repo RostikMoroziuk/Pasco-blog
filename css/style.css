@@ -1,17 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
   margin: 0;
   padding: 0; }
 
 .navigation a,
 .carousel-caption,
-.btn {
+.btn,
+.header,
+.caption,
+.events,
+.about {
   font-family: "Montserrat", sans-serif; }
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400; }
+
+.latest-posts .post-header {
+  font-size: 14px; }
 
 .navigation a,
 .navigation,
 .carousel-caption {
   color: rgba(255, 255, 255, 0.9); }
+
+.header,
+.banners .caption {
+  color: rgba(0, 0, 0, 0.87); }
+
+.latest-posts .header,
+.subscribe-buttons .header,
+.top-blogers h2.header {
+  color: #303f9f; }
+
+.subscribe-buttons,
+.latest-posts {
+  background-color: #bbb; }
+
+.header {
+  font-size: 24px;
+  font-weight: 700; }
 
 .main-header .navigation {
   position: fixed; }
@@ -46,7 +77,8 @@
   border-bottom: 2px solid #ff4081; }
 .navigation .navbar-brand {
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .carousel-caption .inscription {
   text-transform: uppercase;
@@ -80,5 +112,75 @@
   color: rgba(255, 255, 255, 0.9);
   background-color: #303f9f;
   border-radius: 25px 25px; }
+
+.credibility {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+
+.subscribe-buttons {
+  padding: 50px 0; }
+  .subscribe-buttons .wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .subscribe-buttons .header {
+    margin: 0 0 20px; }
+  .subscribe-buttons .caption {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .subscribe-buttons a {
+    margin-right: 20px; }
+
+.top-blogers h2.header {
+  margin: 50px 0;
+  text-align: center; }
+.top-blogers .bloger {
+  display: flex; }
+.top-blogers .photo {
+  margin: 0 20px 40px 0;
+  width: 125px;
+  height: 125px; }
+.top-blogers .header {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px; }
+
+.latest-posts .header {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 18px; }
+.latest-posts .wrapper {
+  display: flex;
+  justify-content: space-around; }
+.latest-posts .post {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  width: 260px;
+  height: 420px;
+  margin-bottom: 50px; }
+.latest-posts .post-header {
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 0; }
+.latest-posts .text-content {
+  padding: 12px 21px 21px; }
+.latest-posts .line {
+  width: 260px;
+  height: 1px;
+  background-color: #999; }
+.latest-posts .text {
+  margin: 0; }
+.latest-posts .author {
+  padding: 21px;
+  display: flex;
+  justify-content: space-between; }
+.latest-posts .photo {
+  float: left;
+  margin-right: 10px; }
+.latest-posts .name {
+  float: right; }
+.latest-posts .show {
+  align-self: flex-end; }
 
 /*# sourceMappingURL=style.css.map */

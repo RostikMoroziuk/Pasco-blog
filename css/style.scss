@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 $headFont: 'Montserrat',
 sans-serif;
+$textFont: 'Open Sans', sans-serif;
 $smallFont: 14px;
 $mediumFont: 24px;
+$articleFont: 18px;
+$nameFont: 16px;
 $whiteColor: rgba(#fff,
 0.9);
+$darkColor: rgba(0,
+0,
+0,
+0.87);
 $secondColor: #303f9f;
+$darkBackground: #bbb;
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +22,50 @@ $secondColor: #303f9f;
 
 .navigation a,
 .carousel-caption,
-.btn {
+.btn,
+.header,
+.caption,
+.events,
+.about {
   font-family: $headFont;
+}
+
+.text {
+  font-family: $textFont;
+  font-size: $smallFont;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.latest-posts .post-header {
+  font-size: $smallFont;
 }
 
 .navigation a,
 .navigation,
 .carousel-caption {
   color: $whiteColor;
+}
+
+.header,
+.banners .caption {
+  color: $darkColor;
+}
+
+.latest-posts .header,
+.subscribe-buttons .header,
+.top-blogers h2.header {
+  color: $secondColor;
+}
+
+.subscribe-buttons,
+.latest-posts {
+  background-color: $darkBackground;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .main-header {
@@ -69,6 +114,7 @@ $secondColor: #303f9f;
   .navbar-brand {
     font-size: 24px;
     text-transform: uppercase;
+    font-weight: 700;
   }
 }
 
@@ -114,4 +160,99 @@ $secondColor: #303f9f;
   color: $whiteColor;
   background-color: $secondColor;
   border-radius: 25px 25px;
+}
+
+.credibility {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscribe-buttons {
+  padding: 50px 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header {
+    margin: 0 0 20px;
+  }
+  .caption {
+    font-size: $mediumFont;
+    margin-bottom: 20px;
+  }
+  a {
+    margin-right: 20px;
+  }
+}
+
+.top-blogers {
+  h2.header {
+    margin: 50px 0;
+    text-align: center;
+  }
+  .bloger {
+    display: flex;
+  }
+  .photo {
+    margin: 0 20px 40px 0;
+    width: 125px;
+    height: 125px;
+  }
+  .header {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: $nameFont;
+  }
+}
+
+.latest-posts {
+  .header {
+    margin: 50px 0;
+    text-align: center;
+    font-size: $articleFont;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .post {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    width: 260px;
+    height: 420px;
+    margin-bottom: 50px;
+  }
+  .post-header {
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 0;
+  }
+  .text-content {
+    padding: 12px 21px 21px;
+  }
+  .line {
+    width: 260px;
+    height: 1px;
+    background-color: #999;
+  }
+  .text {
+    margin: 0;
+  }
+  .author {
+    padding: 21px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .photo {
+    float: left;
+    margin-right: 10px;
+  }
+  .name {
+    float: right;
+  }
+  .show {
+    align-self: flex-end;
+  }
 }
