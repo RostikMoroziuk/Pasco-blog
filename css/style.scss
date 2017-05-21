@@ -160,9 +160,10 @@ $footerColor: rgba(255,
   }
 }
 
-.dropdown-menu > li > a {
-  color: $whiteColor;
+.dropdown-menu>li>a {
+  color: $secondColor;
 }
+
 .carousel {
   .carousel-caption {
     bottom: 50%;
@@ -215,6 +216,7 @@ $footerColor: rgba(255,
   border-radius: 25px 25px;
   &:hover {
     color: $footerColor;
+    background-color: lighten($secondColor, 10%);
   }
 }
 
@@ -222,6 +224,15 @@ $footerColor: rgba(255,
   list-style: none;
   display: flex;
   justify-content: space-around;
+  img {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    transition: top .3s;
+    &:hover {
+      top: -10px;
+    }
+  }
 }
 
 .subscribe-buttons {
@@ -242,6 +253,12 @@ $footerColor: rgba(255,
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
+    position: relative;
+    top: 0px;
+    transition: top .3s;
+    &:hover {
+      top: -10px;
+    }
   }
   .events {
     list-style-position: inside;
@@ -290,12 +307,25 @@ $footerColor: rgba(255,
     align-self: flex-end;
     padding-left: 10px;
     cursor: pointer;
+    color: $darkColor;
+    &:hover {
+      color: $secondColor;
+    }
   }
   .contact {
     display: flex;
   }
   .name {
     font-weight: 700;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    transition: box-shadow .3s; // box-shadow: none;
+    margin-bottom: 25px;
+    &:hover {
+      box-shadow: 5px 5px 5px rgba($secondColor, 0.3);
+    }
   }
 }
 
@@ -323,6 +353,10 @@ $footerColor: rgba(255,
   }
   .text-content {
     padding: 12px 21px 21px;
+    color: $darkColor;
+  }
+  .date {
+    color: $darkColor;
   }
 }
 
@@ -338,10 +372,6 @@ $footerColor: rgba(255,
     border-radius: 4px;
     background-color: #ffffff;
     display: flex;
-    margin-bottom: 25px;
-    &:last-of-type {
-      margin-bottom: 50px;
-    }
   }
   .author {
     padding-left: 0;
@@ -370,6 +400,10 @@ $footerColor: rgba(255,
   }
   .text-content {
     width: 68%;
+    color: $darkColor;
+  }
+  .date {
+    color: $darkColor;
   }
   .text {
     margin-bottom: 12px;
@@ -468,6 +502,9 @@ $footerColor: rgba(255,
     border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
+    &:hover {
+      background-color: $secondColor;
+    }
   }
 }
 
@@ -554,6 +591,9 @@ $footerColor: rgba(255,
   .navigation .navbar-brand .glyphicon {
     display: inline-block;
   }
+  .dropdown-menu>li>a {
+    color: $whiteColor;
+  }
 }
 
 @media (max-width: 991px) {
@@ -561,14 +601,13 @@ $footerColor: rgba(255,
     flex-direction: column;
     align-items: center;
   }
-  .post {
+  a {
     margin-bottom: 25px;
   }
   .consume .step {
     margin-bottom: 25px;
     justify-content: flex-start;
   }
-
 }
 
 @media (max-width: 767px) {
