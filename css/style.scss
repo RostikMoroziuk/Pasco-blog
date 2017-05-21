@@ -154,6 +154,9 @@ $footerColor: rgba(255,
     .glyphicon {
       display: none;
     }
+    &:hover {
+      color: $footerColor;
+    }
   }
 }
 

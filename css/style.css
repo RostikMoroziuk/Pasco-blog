@@ -103,6 +103,8 @@
   font-weight: 700; }
   .navigation .navbar-brand .glyphicon {
     display: none; }
+  .navigation .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.5); }
 
 .dropdown-menu > li > a {
   color: rgba(255, 255, 255, 0.9); }
